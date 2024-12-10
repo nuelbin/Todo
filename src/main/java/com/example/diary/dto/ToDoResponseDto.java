@@ -1,6 +1,6 @@
 package com.example.diary.dto;
 
-import com.example.diary.entity.ToDoList;
+import com.example.diary.entity.ToDo;
 import lombok.Getter;
 
 @Getter
@@ -10,7 +10,7 @@ public class ToDoResponseDto {
     private String toDo;
     private String name;
 
-    public ToDoResponseDto(ToDoList todolist) {
+    public ToDoResponseDto(ToDo todolist) {
         this.id = todolist.getId();
         this.toDo = todolist.getToDo();
         this.name = todolist.getName();
